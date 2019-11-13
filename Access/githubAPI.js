@@ -16,6 +16,10 @@ function getUserDetails() {
     document.getElementById("userjson").innerHTML = "<p>HTML URL : " + userDetails.html_url +
         "<p>User Details : " + userDetails + "</p>"; 
     var repos = getReposForUser(username);
+    repos = JSON.stringify(repos);
+    document.getElementById("userjson").innerHTML = "<p>HTML URL : " + userDetails.html_url +
+    "<p>User Details : " + repos + "</p>"; 
+    
     d3.select("body").selectAll("svg").remove();
     
    for (var i = 0; i < repos.length; i++){
@@ -26,4 +30,13 @@ function getUserDetails() {
     }
 }
 
+function getReposForUser(username) {
+    var apiUrl = "https://api.github.com/users/" + username + "/repos";
+    return getGithubApiResponse(apiUrl);
+}
 
+function getContributorsForRepo(username, repo) {
+    var apiUrl = "https://api.github.com/repos/" + username + "/" + repo + "/contributors";
+    return getGithubApiResponse(apiUrl);
+
+}
