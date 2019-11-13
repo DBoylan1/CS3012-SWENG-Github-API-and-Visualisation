@@ -5,11 +5,12 @@
     <title>View Github User details and status</title>
    <style>
  </style>
+   <script src="githubAPI.js"></script>
 </head>
 <body>
 
 <p>Enter a github username to find the user details</p>
-<p>Username : <input type="text" size="25" id="username_inp"/> <input value="Get Details" type="button"/> </p>
+<p>Username : <input type="text" size="25" id="username_inp"/> <input value="Get Details" type="button" onclick="getUserDetails()"/> </p>
 
 <p><pre id="userjson"></pre></p>
 </body>
