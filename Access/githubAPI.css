@@ -1,20 +1,21 @@
-<<<<<<< HEAD
+
 body {
-    background-color: rgb(10, 76, 85);
+  /*background-color: rgb(10, 76, 85);*/
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   }
   h1 {
     color: blue;
   }
   p {
-    color: rgb(211, 223, 53);
-=======
-body {
-    background-color: rgb(10, 76, 85);
+    color: rgb(123, 37, 163);
   }
-  h1 {
-    color: blue;
+  .header {
+    padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 20px;
   }
-  p {
-    color: rgb(211, 223, 53);
->>>>>>> 27591909fd61230e27d556953710554eb4d737ff
-  }
+
+
+
