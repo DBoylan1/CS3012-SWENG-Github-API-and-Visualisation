@@ -1,17 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <div class="header">
-        <h1>Github User Details</h1>
+        <h1>Github User Analytics</h1>
         <p>By Dearbhla Boylan</p>
       </div>
     <link rel ="stylesheet" href= "githubAPI.css">
     <meta charset="UTF-8">
     <title>View Github User Details</title>
-   <style>  
+   <style> 
+
+.bar{
+    fill: steelblue;
+}
+
+.bar:hover{
+    fill: brown;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
  </style>
    <script src="githubAPI.js"></script>
+   <script src='https://d3js.org/d3.v4.min.js'></script>
 </head>
 <body>
 
@@ -21,5 +41,4 @@
 <p><pre id="userjson"></pre></p>
 </body>
 </html>
-
 
